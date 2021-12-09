@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
+    <script src="https://kit.fontawesome.com/d9a774767c.js" crossorigin="anonymous"></script>
     <title>Page d'accueil</title>
 </head>
 <body>
     <div class="container">
 
         <div class="header">
-
-            <div class="nom">
-                <h3>alamy</h3>
-            </div>
-
-            <div class="para">
-                <p>279,159,125 stock photos, 360° images, vectors and videos</p>
-            </div>
-
+            
+            <h1>alamy <span>279,159,125 stock photos, 360° images, vectors and videos</span></h1>
+            
+            
             <div class="nav">
                 <ul>
-                    <li><a href="#"><img src="../img/bubble-chat.png" alt="" srcset="">Live chat</a></li>&nbsp;&nbsp;
-                    <li><a href="#"><img src="../img/add.png" alt="" srcset="">Lightboxes</a></li>&nbsp;&nbsp;
-                    <li><a href="#"><img src="../img/shopping-cart.png" alt="" srcset="">Cart</a></li>&nbsp;&nbsp;
-                    <li><a href="#"><img src="../img/user.png" alt="" srcset="">Account</a></li>
+                    <li><a href="#"><i class="fas fa-comment-dots"></i>&nbsp;Live chat</a></li>&nbsp;
+                    <li><div class="vl"></div></li>
+                    <li><a href="#"><i class="fas fa-plus-circle"></i>&nbsp;Lightboxes</a></li>&nbsp;
+                    <li><div class="vl"></div></li>
+                    <li><a href="#"><i class="fas fa-cart-plus"></i>&nbsp;Cart</a></li>&nbsp;
+                    <li><div class="vl"></div></li>
+                    <li><a href="#"><i class="fas fa-user"></i>&nbsp;Account</a></li>
                 </ul>
             </div>
         </div>
@@ -34,20 +33,72 @@
             <div class="titre">
                 <h1>OWN THE BLANCK PAGE</h1><br>
                 <h3>Be braver. Go further. Start here.</h3>
-
-            </div>
+            </div> <br><br>
             <div class="search">
-               
-                <input type="text" name="" id="">
-                <button type="submit"><img src="../img/photo-camera.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/search.png" alt="" srcset=""></button>
+                <div class="barre">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="fas fa-images">&#xf302;Images</option>
+                            <option value="">&#xf030;Photographs</option>
+                            <option value="fas fa-vector-square">&#xf5cb;Vectors</option>
+                            <option value="fas fa-pen-fancy">&#xf5ac;Illustrations</option>
+                        </select><br>
+                        
+                    </div>
+                    <div class="vl"></div>
+                    <div class="input">
+                        <input type="text" name="" id="" placeholder="Search for...">
+                    </div>
+                    <div class="button">
+                        <button type="submit"><i class="fas fa-camera"></i>&nbsp;&nbsp;<i class="fas fa-search"></i></button>
+                    </div>
+                </div>
             </div>
 
         </div>
 
         <div class="footer">
 
+            <div class="fond">
+                <h1>Alternative inspiration</h1>
+                <p>Don't start with the same content as everyone else.<br>Find the unexpected and the unique. Over <br>150,000 fresh content assets every day.</p>
+            </div>
         </div>
+    </div><br>
+    <div class="suite">
+        <div class="suite1">
+            <h1>Make your budget for further</h1>
+            <p>Save up to 30% on content packs and get more creative firepower.</p>
+            <button class="btn-vert">See discount deals</button>
+        </div>
+        <div class="suite2">
+            <div class="photovide1" style="height:100px;">
 
+            </div>
+            <div class="photo1">
+                <div class="img1">
+                </div>
+                <div class="text1">
+                    <h1>Stock content</h1>
+                    <p>Whatever you're looking for, we have it. Stock photos and videos.</p>
+                    <button class="btn-img">See fresh content</button>
+                </div>
+            </div>
+            <div class="photo2">
+                <div class="img2">
+                </div>
+                <div class="text2">
+                    <h1>Historical archive</h1>
+                    <p>Famous collections, iconic photographers. Every era documented from every angle. Unseen reportage.</p>
+                    <button class="btn-img">View archive highlights</button>
+                </div>
+                <div class="photovide2" style="width:100px;">
+
+                </div>
+            </div>
+        </div>
+        
     </div>
+
 </body>
 </html>

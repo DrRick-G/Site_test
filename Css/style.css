@@ -1,61 +1,111 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-image: url("../img/girl.webp");
-    background-repeat: no-repeat;
+
     
 }
 
 *{
     margin: 0;
-    padding: 0;
-
 }
 
 .container{
     flex-wrap: wrap;
+    background: url("../img/girl.webp") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .header{
-    height: 80px;
+    height: 100px;
     flex: O O 100%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top:20px;
+    align-items:flex-start;
+    padding-top:10px;
 }
+
+.header span{
+    font-weight: normal;
+    font-size:15px;
+}
+
+
 
 img{
     width:20px;
 }
 .content{
-    height: 500px;
+    height:700px;
     flex: O O 100%;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:flex-start;
     align-items: center;
+    margin-top:30px;
 }
+.titre{
+    line-height:20px;
+    text-align: center;
+}
+.titre h1{
+    font-size:70px;
+}
+.titre h3{
+    font-weight: normal;
+}
+.vl{
+    border:1px solid black;
+    height:30px;
+}
+
 .footer{
-    height: 250px;
+    height: 200px;
     flex: O O 100%;
 }
 
+.fond{
+    height: 170px;
+    background-color: rgba(41, 40, 40, 0.6);
+    position: static;
+    padding-top: 30px;
+}
+
+.fond p , .fond h1{
+    color: white;
+    margin-left: 30px;
+    
+}
+.fond p{
+    font-size: 20px;
+    font-weight:normal;
+    line-height:25px
+}
+.fond h1{
+    font-size: 50px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+
+
+
 ul li{
-    display: inline-block
+    display: inline-block;
+    margin-right:20px;
+    top: 0;
 }
 
 ul li a{
     text-decoration: none;
     color:black;
+    font-size:normal;
 }
 
-.container .titre h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 50px;
-}
-.container .titre h3{
-    text-align:center;
+ul li a:hover{
+    color:rgb(57, 207, 57);
 }
 
 
@@ -63,30 +113,140 @@ ul li a{
     width:25px;
 }
 
-.container .content .search::before, .container .content .search::after{
-    content: '';
-    display:table;
-}
-
-.container .content .search::after{
-    clear: both;
-}
-
-.container .content .search input{
-    width:450px;
-    height:40px;
-    border-radius: 40px;
-    border: 1px solid black;
-}
-
-.container .content .search input:focus{
-    outline: 0;
-}
-
 .container .content .search button{
     overflow:visible;
     position:relative;
     float:right;
     height:40px;
-    border
 }
+
+.fas {
+    display:inline-block;
+    font-size:20px;
+}
+
+.fas:hover{
+    color:rgb(57, 207, 57);
+}
+
+.barre{
+    display: flex;
+    flex-direction:row;
+    width: 600px;
+    height: 45px;
+    background-color: white;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border: 1px solid black;
+    border-radius: 30px
+
+}
+.barre input, .barre button, .barre select{
+    border: none;
+    outline: none;
+}
+
+button{
+    background: none;
+}
+
+.suite{
+    flex:0 0 100%;
+    display: flex;
+    flex-direction:column;   
+}
+
+.suite1{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    line-height:50px;
+}
+
+.suite1 p{
+    font-size: 25px;
+    font-weight: normal;
+}
+.suite1 h1{
+    font-size: 45px;
+}
+
+.suite1 .btn-vert{
+    font-size: 15px;
+    font-weight: bold;
+    width: 250px;
+    height: 45px;
+    background-color:rgb(57, 207, 57);
+    border-radius: 30px;
+    border: 1px solid black;
+
+}
+
+.suite1 .btn-vert:hover{
+    background-color:rgb(14, 117, 14);
+}
+
+.suite2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.suite2 .photo1{
+    width: 400px;
+    height: 400px;
+}
+.suite2 .photo2{
+    width: 400px;
+    height: 400px;
+    margin-left: 150px;
+}
+
+.suite2 .photo1 .img1{
+    background-image:url("../img/2CHH6YC.webp");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:550px;
+    height:550px;
+}
+.suite2 .photo2 .img2{
+    background-image:url("../img/BPBK81.webp");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:550px;
+    height:550px;
+    
+}
+.suite .suite2 .btn-img{
+    width: 500px;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid black;
+
+}
+
+.suite .suite2 .text1 p, .suite .suite2 .text2 p{
+    font-size: normal;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.suite .suite2 .text1 h1, .suite .suite2 .text2 h1{
+    margin-top:30px;
+}
+
+.fin{
+    width:400px;
+    background-color: aqua;
+    height:500px;
+}
+
+
+
+
+
+
